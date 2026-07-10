@@ -1,0 +1,102 @@
+aid: vertafore
+name: Vertafore
+review:
+  question: Does Vertafore expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-10'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. Vertafore's developer surface is
+    request/response - REST (AMS360 EMS API, ImageRight REST API), SOAP
+    (AMS360 WSAPI / WSAPIService.svc), and OData (AMS360 OData connection).
+    There is no documented server-push transport (WebSocket or SSE) on any
+    Vertafore API to model. Event-style delivery in the AMS360 world is handled
+    by the Outbound Notification Service (ONS), which pushes notifications to a
+    configured HTTP endpoint (a webhook), not over a persistent WebSocket. All of
+    this documentation is also partner-gated behind the Vertafore Developer
+    Portal login, so nothing could be harvested into an open AsyncAPI document.
+findings:
+  summary: |
+    Vertafore does not publish a documented public WebSocket API. Vertafore is an
+    insurance technology vendor; its developer APIs sit over agency management
+    systems (AMS360, Sagitta), the ImageRight content platform, and the PL Rating
+    comparative rater. The surfaces that are documented are all request/response -
+    a REST API for AMS360 (the EMS API, OAuth Bearer, e.g. a Customers resource
+    under /authgrant/v1/api on host api-sandbox.vertafore.com), a SOAP web service
+    for AMS360 (WSAPIService.svc, username/password), an OData connection for
+    AMS360 data extraction, an ImageRight REST API (token auth), and a rating API
+    over PL Rating. Near-real-time behavior in AMS360 is delivered by the Outbound
+    Notification Service, which posts notifications to a customer HTTP endpoint
+    (webhook), not a WebSocket. No ws:// or wss:// endpoint is documented on any
+    Vertafore product.
+  accessModel: |
+    Vertafore's developer program is partner-gated. Reaching the reference
+    documentation and OpenAPI requires a Vertafore Single Sign-On (VSSO) account,
+    a licensed Vertafore Developer Portal contract, and per-API scopes the agency
+    has contracted for. Applications are built in a Sandbox and promoted to Live
+    only after Vertafore Customer Support approval. Third-party solution vendors
+    typically enter through the Orange Partner Program, which grants an integration
+    toolkit and a test instance. Because of this gating, the endpoints in apis.yml
+    are marked endpointsModeled and are honestly modeled from public help pages and
+    product documentation, not harvested from an open specification.
+  transports:
+    - protocol: REST
+      scheme: https
+      baseURL: https://api.vertafore.com
+      documented: true
+      note: AMS360 EMS API and ImageRight REST API. Public tutorial shows sandbox host api-sandbox.vertafore.com with OAuth Bearer tokens. Full reference is gated.
+    - protocol: SOAP
+      scheme: https
+      documented: true
+      note: AMS360 WSAPI exposed as /v3/WSAPIService.svc with operations such as CustomerGet, PolicyGet, SearchByPhoneNumber. WSDL is partner-gated.
+    - protocol: OData
+      scheme: https
+      documented: true
+      note: AMS360 OData connection method for retrieving customer, policy, and accounting data. Requires an AMS360 OData subscription.
+    - protocol: Webhook
+      scheme: https
+      documented: true
+      note: AMS360 Outbound Notification Service (ONS) posts notifications to a configured HTTP endpoint. Server-to-endpoint HTTP, not a WebSocket.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented on any Vertafore API or product as of the review date.
+  endpointsModeled:
+    - GET  https://api.vertafore.com/authgrant/v1/api/Customers
+    - POST https://api.vertafore.com/authgrant/v1/api/Policies
+    - POST https://ws.ams360.com/v3/WSAPIService.svc (CustomerGet)
+    - POST https://ws.ams360.com/v3/WSAPIService.svc (PolicyGet)
+    - POST https://ws.ams360.com/v3/WSAPIService.svc (SearchByPhoneNumber)
+sources:
+  - url: https://developer.vertafore.com/
+    type: Documentation
+    note: Vertafore API Developer Portal home. Gated behind VSSO login.
+  - url: https://help.vertafore.com/devportal/content/getstarted/gettingstarted.htm
+    type: Documentation
+    note: Getting Started - describes VSSO auth, licensed customer requirement, Sandbox-to-Live promotion, and the AMS360 OData API plus the forthcoming Rating API.
+  - url: https://help.vertafore.com/devportal/content/howto/tutorial1_headerconnection.htm
+    type: APIReference
+    note: Tutorial shows OAuth token exchange and a GET Customers call on api-sandbox.vertafore.com. All REST request/response.
+  - url: https://help.vertafore.com/ams360/content/contextsensitive/download-integration/cswebserviceapisetup.htm
+    type: Documentation
+    note: AMS360 Web Service API setup - username/password, SOAP WSAPIService.svc.
+  - url: http://support2.vertafore.com/Repository/Documentation/DWN311/ImageRight6.8RestAPI.pdf
+    type: Documentation
+    note: ImageRight 6.8 REST API reference PDF - authentication, status and error codes, resource model. REST, no WebSocket.
+  - url: https://www.vertafore.com/products/insurance-comparative-rater/pl-rating
+    type: Documentation
+    note: PL Rating comparative rater product page; basis for the modeled rating API.
+  - url: https://www.vertafore.com/why-vertafore/orange-partner-program
+    type: Documentation
+    note: Orange Partner Program - the partner path to Vertafore API access and integration toolkits.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket protocol surface exists on any Vertafore API. Vertafore's own
+    public developer surface is request/response (REST, SOAP, OData) and, for
+    push, an HTTP webhook (the Outbound Notification Service). No AsyncAPI
+    document was created because there is no server-push WebSocket transport to
+    model, and the documentation is partner-gated so nothing could be sourced
+    openly. Entry is modeled honestly with endpointsModeled set on each API.

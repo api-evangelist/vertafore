@@ -1,0 +1,185 @@
+aid: vertafore
+url: https://raw.githubusercontent.com/api-evangelist/vertafore/refs/heads/main/apis.yml
+name: Vertafore
+kind: company
+description: >-
+  Vertafore is an insurance technology provider whose software runs a large share
+  of the North American property and casualty distribution channel - agency
+  management systems (AMS360 and Sagitta), the ImageRight document and content
+  management platform, and the PL Rating personal-lines comparative rater.
+  Vertafore exposes developer APIs across these products through the Vertafore API
+  Developer Portal (developer.vertafore.com) and the Orange Partner Program. Access
+  is partner-gated - it requires a Vertafore Single Sign-On (VSSO) account, a
+  licensed Vertafore Developer Portal contract, and per-API scopes that the agency
+  has contracted for, with applications promoted from a Sandbox to Live only after
+  Vertafore approval. Because the reference documentation and OpenAPI live behind
+  that login, the endpoints listed here are honestly modeled from public help
+  content and product pages rather than pulled from an open specification.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Insurance
+- InsurTech
+- Agency Management
+- Property and Casualty
+- AMS360
+- Sagitta
+- ImageRight
+- Comparative Rating
+- Partner Gated
+created: '2026-07-10'
+modified: '2026-07-10'
+specificationVersion: '0.19'
+apis:
+- aid: vertafore:vertafore-ams360-ems-api
+  name: Vertafore AMS360 EMS API
+  tags:
+  - AMS360
+  - REST
+  - Customers
+  - Policies
+  - Partner Gated
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.vertafore.com/
+  baseURL: https://api.vertafore.com
+  endpointsModeled: true
+  properties:
+  - url: https://help.vertafore.com/devportal/content/getstarted/gettingstarted.htm
+    type: Documentation
+  - url: https://help.vertafore.com/devportal/content/howto/tutorial1_headerconnection.htm
+    type: APIReference
+  description: >-
+    The newest and preferred REST API for AMS360, the flagship property and
+    casualty agency management system. It exposes agency data as REST resources -
+    Customers, Policies, Service Agreements, Invoices, Billing, Deposits, and
+    Personnel - secured with OAuth Bearer tokens. Public tutorials show the sandbox
+    base host api-sandbox.vertafore.com and a Customers endpoint under
+    /authgrant/v1/api; the full resource surface is documented behind the gated
+    Developer Portal, so endpoints here are modeled rather than harvested.
+- aid: vertafore:vertafore-ams360-wsapi
+  name: Vertafore AMS360 WSAPI
+  tags:
+  - AMS360
+  - SOAP
+  - Web Service
+  - Partner Gated
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://help.vertafore.com/ams360/content/contextsensitive/download-integration/cswebserviceapisetup.htm
+  baseURL: https://ws.ams360.com
+  endpointsModeled: true
+  properties:
+  - url: https://help.vertafore.com/ams360/content/contextsensitive/download-integration/cswebserviceapisetup.htm
+    type: Documentation
+  description: >-
+    The established SOAP web service for AMS360 (versions 2.4 and 3.0), exposed as
+    WSAPIService.svc and authenticated with a per-agency username and password. It
+    lets third-party applications send, receive, and update data directly against
+    the AMS360 database while preserving AMS360 security. Public references name
+    operations such as CustomerGet, PolicyGet, and SearchByPhoneNumber under a
+    /v3/WSAPIService.svc path. The WSDL is partner-gated, so operations here are
+    modeled from public help content.
+- aid: vertafore:vertafore-ams360-odata-api
+  name: Vertafore AMS360 OData API
+  tags:
+  - AMS360
+  - OData
+  - Reporting
+  - Partner Gated
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://help.vertafore.com/ams360/content/contextsensitive/download-integration/gsplrating-anoverview.htm
+  baseURL: https://api.vertafore.com
+  endpointsModeled: true
+  properties:
+  - url: https://help.vertafore.com/devportal/content/getstarted/gettingstarted.htm
+    type: Documentation
+  description: >-
+    An OData connection method for AMS360 used to automatically retrieve customer,
+    policy, and accounting data for reporting and downstream integrations. Access
+    requires an AMS360 OData subscription contracted through Vertafore. The queryable
+    entity set and $filter surface are documented inside the gated portal, so the
+    resources here are modeled rather than sourced from an open metadata document.
+- aid: vertafore:vertafore-imageright-rest-api
+  name: Vertafore ImageRight REST API
+  tags:
+  - ImageRight
+  - Documents
+  - Content Management
+  - REST
+  - Partner Gated
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://developer.vertafore.com/
+  baseURL: https://api.vertafore.com
+  endpointsModeled: true
+  properties:
+  - url: http://support2.vertafore.com/Repository/Documentation/DWN311/ImageRight6.8RestAPI.pdf
+    type: Documentation
+  description: >-
+    A REST API over ImageRight, Vertafore's document and content management platform
+    for carriers and larger agencies. It covers document ingestion and retrieval,
+    files and folders, tasks, and workflow objects, authenticated with a token
+    obtained from ImageRight credentials. A public ImageRight 6.8 REST API reference
+    PDF documents the authentication flow, status and error codes, and resource
+    model; live base URLs are deployment-specific, so endpoints here are modeled.
+- aid: vertafore:vertafore-pl-rating-api
+  name: Vertafore PL Rating API
+  tags:
+  - PL Rating
+  - Comparative Rating
+  - Personal Lines
+  - Quoting
+  - Partner Gated
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.vertafore.com/products/insurance-comparative-rater/pl-rating
+  baseURL: https://api.vertafore.com
+  endpointsModeled: true
+  properties:
+  - url: https://www.vertafore.com/products/insurance-comparative-rater/pl-rating
+    type: Documentation
+  - url: https://help.vertafore.com/ams360/content/contextsensitive/download-integration/gsplrating-anoverview.htm
+    type: APIReference
+  description: >-
+    A rating and quoting API surface over PL Rating, Vertafore's personal-lines
+    comparative rater connected to more than 300 carriers across 48 states and DC.
+    It supports single-entry rate requests, real-time carrier quote retrieval, and
+    the newer in-rater bind capability. Vertafore's portal documentation refers to
+    a forthcoming Vertafore Rating API secured with API credential keys; the request
+    and response contracts are partner-gated, so endpoints here are modeled.
+- aid: vertafore:vertafore-sagitta-api
+  name: Vertafore Sagitta API
+  tags:
+  - Sagitta
+  - Agency Management
+  - Commercial Lines
+  - Integrations
+  - Partner Gated
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://help.vertafore.com/commercialsubmissions/content/howto/managementsystemintegration.htm
+  baseURL: https://api.vertafore.com
+  endpointsModeled: true
+  properties:
+  - url: https://help.vertafore.com/commercialsubmissions/content/howto/managementsystemintegration.htm
+    type: Documentation
+  description: >-
+    Integration APIs over Sagitta, Vertafore's agency management system for larger
+    and more complex commercial agencies and brokers. Documented integrations bridge
+    Sagitta customer, contact, address, and policy data into other Vertafore
+    products and certified Orange Partner solutions. The Sagitta developer surface is
+    delivered through the gated Developer Portal and partner integration toolkits, so
+    endpoints here are modeled from public help content.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/vertafore
+- type: Website
+  url: https://www.vertafore.com
+- type: Documentation
+  url: https://developer.vertafore.com/
+- type: Partners
+  url: https://www.vertafore.com/why-vertafore/orange-partner-program
+- type: Plans
+  url: plans/vertafore-plans-pricing.yml
+- type: FinOps
+  url: finops/vertafore-finops.yml
+- url: https://www.vertafore.com/resources/blog
+  type: Blog
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,100 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Vertafore
+providerId: vertafore
+created: '2026-07-10'
+modified: '2026-07-10'
+reconciled: false
+tags:
+- Insurance
+- InsurTech
+- Agency Management
+- Partner Gated
+- FinOps
+- Cost Management
+- FOCUS
+description: >-
+  FinOps view of Vertafore spend. Vertafore is licensed through enterprise and
+  quote-based agreements rather than public usage-based API pricing, so a
+  Vertafore invoice is dominated by product subscriptions (AMS360, Sagitta,
+  ImageRight, PL Rating) plus any contracted developer API scopes and Orange
+  Partner Program membership. There is no published per-call rate card. Cost
+  management here is mostly about which product modules and API scopes an agency
+  has contracted for and how many users and integrations consume them.
+notes: >-
+  Per-unit API rates are not public and are not reconciled here; verify actual
+  terms in your Vertafore agreement or with the Orange Partner Program. API access
+  is gated behind a licensed Developer Portal contract and per-API scopes, so the
+  meters below track contract and integration footprint rather than metered calls.
+sources:
+- https://www.vertafore.com/
+- https://developer.vertafore.com/
+- https://help.vertafore.com/devportal/content/getstarted/gettingstarted.htm
+- https://www.vertafore.com/why-vertafore/orange-partner-program
+- https://focus.finops.org/focus-specification/v1-3/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Vertafore
+serviceCategory: Insurance Software and Agency Management
+billingModel:
+  pricingCategory: Subscription and Enterprise Agreement
+  billingFrequency: Annual
+  billingCurrency: USD
+  chargeCategories:
+  - Purchase
+  - Usage
+  - Adjustment
+focusColumns:
+  ServiceName: Vertafore Developer APIs
+  ServiceCategory: Insurance Software and Agency Management
+  ProviderName: Vertafore
+  PublisherName: Vertafore
+  InvoiceIssuerName: Vertafore
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+  PricingCategory: Subscription and Enterprise Agreement
+meters:
+- name: management_system_subscription
+  description: AMS360 or Sagitta management system license the developer APIs sit on top of, typically per user or per agency.
+  unit: seats
+  aggregation: sum
+  dimensions:
+  - agency
+  - product
+- name: api_scopes_contracted
+  description: Number of API scopes (EMS REST, WSAPI, OData, ImageRight, Rating) the agency has contracted and enabled.
+  unit: scopes
+  aggregation: sum
+  dimensions:
+  - agency
+  - api
+- name: partner_program_membership
+  description: Orange Partner Program membership for third-party solution vendors integrating with Vertafore products.
+  unit: memberships
+  aggregation: sum
+  dimensions:
+  - partner
+- name: rating_transactions
+  description: PL Rating comparative-rating and bind transactions, where contracted on a per-transaction or bundled basis.
+  unit: transactions
+  aggregation: sum
+  dimensions:
+  - agency
+  - carrier
+principles:
+- name: Visibility
+  description: Track which product subscriptions and API scopes each agency has contracted, and which integrations and users actually consume them.
+- name: Allocation
+  description: Map API scopes and Orange Partner integrations to the teams, agencies, or product lines that depend on them.
+- name: Optimization
+  description: Retire unused API scopes and idle integrations; consolidate on the newer EMS REST API rather than legacy WSAPI where possible; scope rating access to active carriers and states.
+- name: Accountability
+  description: Assign an owner per contracted API scope and integration; review annually against the Vertafore agreement and Orange Partner terms.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

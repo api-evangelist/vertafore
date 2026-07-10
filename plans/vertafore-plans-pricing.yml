@@ -1,0 +1,80 @@
+provider: Vertafore
+providerId: vertafore
+created: '2026-07-10'
+modified: '2026-07-10'
+reconciled: false
+description: >-
+  Vertafore does not publish public, self-serve pricing for its products or its
+  developer APIs. Everything is sold through enterprise agreements and quotes to
+  the agency, broker, MGA, or carrier, and API access is gated behind a licensed
+  Vertafore Developer Portal contract plus per-API scopes the customer has
+  contracted for. Third-party solution vendors reach the APIs through the Orange
+  Partner Program. The plans below are a qualitative model of the access tiers,
+  not a reconciled rate card - amounts are deliberately omitted because Vertafore
+  does not disclose them.
+currency: USD
+publicPricing: false
+notes: >-
+  All figures are quote-based. Contact Vertafore sales or the Orange Partner
+  Program for actual pricing. Scopes are described in the portal as the instances
+  of APIs an agency has contracted with Vertafore to use.
+plans:
+- name: AMS360 / Sagitta Customer API Access
+  type: contracted
+  audience: Licensed Vertafore agency management customers
+  price: Quote-based
+  description: >-
+    An existing AMS360 or Sagitta customer contracts for developer API access
+    (EMS REST, WSAPI, or the OData connection) as an add-on to their management
+    system license, scoped to the APIs their agency has enabled. Includes the
+    Sandbox environment and Vertafore-approved promotion to Live.
+  features:
+  - Access to contracted AMS360 or Sagitta API scopes
+  - Sandbox development environment
+  - Vertafore-approved Sandbox-to-Live promotion
+  - OAuth or username/password credentials per API
+- name: Orange Partner Program
+  type: partner
+  audience: Third-party technology and solution vendors
+  price: Quote-based, program membership
+  description: >-
+    The partner path for independent software vendors building certified
+    integrations against AMS360, Sagitta, QQCatalyst, BenefitPoint, and
+    ImageRight. Provides an integration toolkit for the relevant management
+    system, access to a test instance, MyVertafore documentation and sample use
+    cases, and listing on Vertafore's website.
+  features:
+  - Integration toolkit for the target management system
+  - Online test instance
+  - MyVertafore documentation and sample use cases
+  - Certification and marketplace listing
+- name: PL Rating / Rating API
+  type: contracted
+  audience: Agencies and carriers using PL Rating
+  price: Quote-based
+  description: >-
+    Programmatic access to comparative rating and quoting over PL Rating,
+    connected to 300-plus carriers across 48 states and DC, including the newer
+    in-rater bind capability. Secured with API credential keys per Vertafore's
+    portal documentation.
+  features:
+  - Single-entry multi-carrier rate requests
+  - Real-time carrier quote retrieval
+  - In-rater bind capability
+  - API credential key authentication
+- name: Enterprise / Carrier
+  type: enterprise
+  audience: Carriers, large brokers, and MGAs
+  price: Custom enterprise agreement
+  description: >-
+    Enterprise agreements covering high-volume, multi-product, or carrier-scale
+    use of Vertafore APIs (including ImageRight content management and
+    cross-product data movement), with negotiated scopes, support, and SLAs.
+  features:
+  - Multi-product and cross-product API access
+  - Negotiated volume and SLA terms
+  - ImageRight document and content APIs
+  - Dedicated support
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
