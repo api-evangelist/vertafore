@@ -166,6 +166,8 @@ apis:
     delivered through the gated Developer Portal and partner integration toolkits, so
     endpoints here are modeled from public help content.
 common:
+- type: DomainSecurity
+  url: security/vertafore-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/vertafore
 - type: Website
