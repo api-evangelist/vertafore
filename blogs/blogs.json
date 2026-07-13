@@ -1,0 +1,14 @@
+{
+  "repo": "vertafore",
+  "feeds": [
+    {
+      "source": "https://www.vertafore.com/resources/blog",
+      "feed_url": "https://www.vertafore.com/resources/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-07-11T11:50:51Z"
+}
