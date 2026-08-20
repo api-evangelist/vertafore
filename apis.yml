@@ -30,6 +30,16 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vertafore.png
 tags:
 - Insurance
+- Insurtech
+- Agency Management
+- Property and Casualty
+- AMS360
+- Sagitta
+- ImageRight
+- Comparative Rating
+- Partner Gated
+tags_raw:
+- Insurance
 - InsurTech
 - Agency Management
 - Property and Casualty
@@ -158,6 +168,12 @@ apis:
 - aid: vertafore:vertafore-sagitta-api
   name: Vertafore Sagitta API
   tags:
+  - Sagitta
+  - Agency Management
+  - Commercial Lines
+  - Integration
+  - Partner Gated
+  tags_raw:
   - Sagitta
   - Agency Management
   - Commercial Lines
