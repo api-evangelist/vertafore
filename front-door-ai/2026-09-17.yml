@@ -1,0 +1,27 @@
+# Front Door AI Index — vertafore — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: vertafore
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.vertafore.com
+  final_host: www.vertafore.com
+  ownership: own
+  owner: vertafore
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 23
+  host_score: 23
+  density: 22.16
+  words: 1038
+  tiers:
+    agentic: 1
+    core: 22
+    model: 0
+  ambiguous: 2
+  top_terms:
+    AI: 22
+    agent: 2
+    agentic: 1
