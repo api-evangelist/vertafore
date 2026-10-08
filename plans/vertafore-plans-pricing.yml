@@ -83,3 +83,34 @@ plans:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - negotiated
+  units: []
+  plans:
+  - name: AMS360 / Sagitta Customer API Access
+    access: negotiated
+    model: negotiated
+    model_how: stated
+    units: []
+    periods: []
+  - name: Orange Partner Program
+    access: partner
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
+  - name: PL Rating / Rating API
+    access: negotiated
+    model: negotiated
+    model_how: stated
+    units: []
+    periods: []
+  - name: Enterprise / Carrier
+    access: enterprise
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
