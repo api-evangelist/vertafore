@@ -32,6 +32,9 @@ accessModel:
   trial: false
   try_now: false
   public: false
+  gated: partner
+  gated_source:
+  - tag:Partner Gated
   label: Enterprise · Requires approval
   confidence: medium
   source:
@@ -48,7 +51,6 @@ tags:
 - Sagitta
 - ImageRight
 - Comparative Rating
-- Partner Gated
 tags_raw:
 - Insurance
 - InsurTech
@@ -58,7 +60,6 @@ tags_raw:
 - Sagitta
 - ImageRight
 - Comparative Rating
-- Partner Gated
 created: '2026-07-10'
 modified: '2026-07-10'
 specificationVersion: '0.23'
@@ -224,3 +225,5 @@ common:
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
+x-tags-removed:
+- Partner Gated
