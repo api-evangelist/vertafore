@@ -1,0 +1,614 @@
+generated: '2026-10-13'
+method: searched
+checked:
+- https://www.vertafore.com/why-vertafore/orange-partner-program
+marketplace_apps:
+- marketplace: own
+  channel: partner-built
+  app: vertafore
+  url: https://www.vertafore.com/why-vertafore/orange-partner-program
+  app_count: 48
+  adapter: sweep-insurance.py:drupal-partner-view
+  listed: 40
+  note: Professional Services Partners (8) are consultants and are not written
+edges:
+- partner_name: Adapt
+  app: Adapt
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/adapt-api
+  category: Integration Partners
+  partner_domain: adaptinsurance.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: AFCO
+  app: AFCO
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/afco
+  category: Premium Financial Partners
+  partner_domain: afcodirect.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Agency Revolution
+  app: Agency Revolution
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/agency-revolution
+  category: Integration Partners
+  partner_domain: agencyrevolution.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Ascend
+  app: Ascend
+  partner: ascend
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/ascend
+  category: Integration Partners
+  partner_domain: useascend.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Automated Installment Systems
+  app: Automated Installment Systems
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.automatedinstallment.com/
+  category: Premium Financial Partners
+  partner_domain: automatedinstallment.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: BackNine Insurance
+  app: BackNine Insurance
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/backnine-insurance
+  category: Integration Partners
+  partner_domain: back9ins.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Bridge
+  app: Bridge
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/bridge
+  category: Integration Partners
+  partner_domain: bridge.insure
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Canopy Connect
+  app: Canopy Connect
+  partner: canopy
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/canopy-connect
+  category: Integration Partners
+  partner_domain: usecanopy.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Capital Premium Financing
+  app: Capital Premium Financing
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.capitalpremium.net/
+  category: Premium Financial Partners
+  partner_domain: capitalpremium.net
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: clientcircle
+  app: clientcircle
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/clientcircle
+  category: Strategic Partners, Integration Partners
+  partner_domain: clientcircle.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Dark Matter
+  app: Dark Matter
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/darkmatter
+  category: Integration Partners
+  partner_domain: darkmatterins.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: DocuSign
+  app: DocuSign
+  partner: docusign
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/docusign
+  category: Strategic Partners, Integration Partners
+  partner_domain: docusign.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: DYL
+  app: DYL
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/dyl
+  category: Integration Partners
+  partner_domain: dyl.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: E.O.X. Vantage
+  app: E.O.X. Vantage
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/eox-vantage
+  category: Integration Partners
+  partner_domain: eoxvantage.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: epay
+  app: epay
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/epaypolicy
+  category: Strategic Partners, Integration Partners
+  partner_domain: null
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: First Insurance Funding
+  app: First Insurance Funding
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.firstinsurancefunding.com/
+  category: Premium Financial Partners
+  partner_domain: firstinsurancefunding.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: iAutomate Erlon Surety
+  app: iAutomate Erlon Surety
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/iautomate-surety
+  category: Integration Partners
+  partner_domain: iautomatesurety.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Imperial PFS
+  app: Imperial PFS
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.ipfs.com/
+  category: Premium Financial Partners
+  partner_domain: ipfs.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: inchanted
+  app: inchanted
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.inchanted.com/
+  category: Integration Partners
+  partner_domain: inchanted.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: InsCipher
+  app: InsCipher
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/inscipher
+  category: Integration Partners
+  partner_domain: inscipher.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: IA App
+  app: IA App
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/insurance-agent-app
+  category: Integration Partners
+  partner_domain: insuranceagentapp.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Intellistack
+  app: Intellistack
+  partner: null
+  partner_match: null
+  partner_candidate: formstack
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/intellistack
+  category: Integration Partners
+  partner_domain: formstack.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Inteveo
+  app: Inteveo
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://ecolink.inteveo.com/
+  category: Integration Partners
+  partner_domain: inteveo.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Johnson & Johnson Preferred Financing
+  app: Johnson & Johnson Preferred Financing
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.jjins.com/financing/
+  category: Premium Financial Partners
+  partner_domain: jjins.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: LeO
+  app: LeO
+  partner: leo
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/leo
+  category: Integration Partners
+  partner_domain: meetleo.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Levitate
+  app: Levitate
+  partner: levitate
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/levitate
+  category: Integration Partners
+  partner_domain: levitate.ai
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: lightspeed
+  app: lightspeed
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/lightspeed-voice
+  category: Integration Partners
+  partner_domain: lightspeedvoice.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Mutual Capital Analytics
+  app: Mutual Capital Analytics
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/mutual-capital-analytics
+  category: Integration Partners
+  partner_domain: mutualcapitalanalytics.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Pathway
+  app: Pathway
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/pathway
+  category: Integration Partners
+  partner_domain: pathwayport.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Patra
+  app: Patra
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/patra
+  category: Integration Partners, Professional Services Partners
+  partner_domain: patracorp.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: PerfectQuote
+  app: PerfectQuote
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://perfectquote.io/
+  category: Strategic Partners, Integration Partners
+  partner_domain: perfectquote.io
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Plansight
+  app: Plansight
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/plainsight
+  category: Integration Partners
+  partner_domain: plansight.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: QuiKer
+  app: QuiKer
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/quiker
+  category: Integration Partners
+  partner_domain: simplyquiker.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: RecordLinker
+  app: RecordLinker
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/recordlinker
+  category: Integration Partners
+  partner_domain: recordlinker.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Simply Easier Payments
+  app: Simply Easier Payments
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/orange-partner-program/simply-easier-payments
+  category: Integration Partners
+  partner_domain: simplyeasier.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: SIUPREM
+  app: SIUPREM
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.siuprem.com
+  category: Premium Financial Partners
+  partner_domain: siuprem.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Synatic
+  app: Synatic
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.synatic.com/
+  category: Integration Partners
+  partner_domain: synatic.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: TurnKey Resources
+  app: TurnKey Resources
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/turnkey
+  category: Integration Partners
+  partner_domain: turnkey-re.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: Twilio
+  app: Twilio
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://www.vertafore.com/products/vertafore-messenger
+  category: Integration Partners
+  partner_domain: null
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
+- partner_name: U.S. Premium Finance
+  app: U.S. Premium Finance
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  relationship: platform-app
+  direction: partner-built
+  evidence: https://uspremiumfinance.com/
+  category: Premium Financial Partners
+  partner_domain: uspremiumfinance.com
+  detected_by: sweep-insurance.py
+  detected: '2026-10-13'
