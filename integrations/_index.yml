@@ -488,3 +488,16 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: vertafore-guidewire-own
+  label: Guidewire (own)
+  partner: guidewire
+  partner_name: Guidewire (own)
+  category: Integration; Distribution & Producer Management;Records Retrieval; PolicyCenter
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.guidewire.com/product/01t3n00000TGYsYAAX/01t3n00000TGYsYAAX
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
