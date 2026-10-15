@@ -524,5 +524,5 @@
     app_slug: vertafore
     beta: false
     builder: unknown (not in the directory record)
-  status: pending-partner-spec
+  status: not-a-workflow
   arazzo: null
