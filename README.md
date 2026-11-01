@@ -1,4 +1,4 @@
-# Vertafore (vertafore)
+# Vertafore
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,99 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Vertafore is an insurance technology provider whose software runs a large share of the North American property and casualty (P&C) distribution channel - agency management systems (**AMS360** and **Sagitta**), the **ImageRight** document and content management platform, and the **PL Rating** personal-lines comparative rater. Vertafore exposes developer APIs across these products through the Vertafore API Developer Portal ([developer.vertafore.com](https://developer.vertafore.com/)) and the Orange Partner Program.
+Vertafore is an insurance technology provider whose software runs a large share of the North American property and casualty distribution channel - agency management systems (AMS360 and Sagitta), the ImageRight document and content management platform, and the PL Rating personal-lines comparative rater. Vertafore exposes developer APIs across these products through the Vertafore API Developer Portal (developer.vertafore.com) and the Orange Partner Program. Access is partner-gated - it requires a Vertafore Single Sign-On (VSSO) account, a licensed Vertafore Developer Portal contract, and per-API scopes that the agency has contracted for, with applications promoted from a Sandbox to Live only after Vertafore approval. Because the reference documentation and OpenAPI live behind that login, the endpoints listed here are honestly modeled from public help content and product pages rather than pulled from an open specification.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/vertafore/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/vertafore/refs/heads/main/apis.yml)
+**Areas:** Insurance · Insurtech · Agency Management · Property and Casualty · AMS360 · Sagitta · ImageRight · Comparative Rating
 
-## Access model (important)
+## Vertafore on APIs.io
 
-Vertafore's developer APIs are **real but partner-gated**. Reaching the reference documentation, OpenAPI, and live endpoints requires:
+Everything profiled for Vertafore is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/vertafore/](https://apis.io/providers/vertafore/)** — or go straight to one of the APIs or properties below.
 
-- A **Vertafore Single Sign-On (VSSO)** account
-- A **licensed Vertafore Developer Portal** contract
-- **Per-API scopes** the agency has contracted for (a scope is an instance of an API your agency has contracted with Vertafore to use)
-- Building in a **Sandbox** and promoting to **Live** only after Vertafore Customer Support approval
+### APIs (6)
 
-Third-party software vendors typically enter through the **Orange Partner Program**, which grants an integration toolkit for the relevant management system and access to a test instance.
+- [Vertafore AMS360 EMS API](https://apis.io/apis/vertafore/vertafore-ams360-ems-api/) — The newest and preferred REST API for AMS360, the flagship property and casualty agency management system. It exposes agency data as REST resources -…
+- [Vertafore AMS360 WSAPI](https://apis.io/apis/vertafore/vertafore-ams360-wsapi/) — The established SOAP web service for AMS360 (versions 2.4 and 3.0), exposed as WSAPIService.svc and authenticated with a per-agency username and password.…
+- [Vertafore AMS360 OData API](https://apis.io/apis/vertafore/vertafore-ams360-odata-api/) — An OData connection method for AMS360 used to automatically retrieve customer, policy, and accounting data for reporting and downstream integrations. Access…
+- [Vertafore ImageRight REST API](https://apis.io/apis/vertafore/vertafore-imageright-rest-api/) — A REST API over ImageRight, Vertafore's document and content management platform for carriers and larger agencies. It covers document ingestion and…
+- [Vertafore PL Rating API](https://apis.io/apis/vertafore/vertafore-pl-rating-api/) — A rating and quoting API surface over PL Rating, Vertafore's personal-lines comparative rater connected to more than 300 carriers across 48 states and DC.…
+- [Vertafore Sagitta API](https://apis.io/apis/vertafore/vertafore-sagitta-api/) — Integration APIs over Sagitta, Vertafore's agency management system for larger and more complex commercial agencies and brokers. Documented integrations…
 
-Because the specifications live behind that login, the endpoints in `apis.yml` are marked `endpointsModeled: true` and are honestly modeled from public help pages and product documentation - they are **not** harvested from an open specification. No specific fabricated endpoint surface is claimed.
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Insurance
-- InsurTech
-- Agency Management
-- Property and Casualty
-- AMS360
-- Sagitta
-- ImageRight
-- Comparative Rating
-- Partner Gated
+#### Security (1)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-07-10
-- **Modified:** 2026-07-10
+- [Vertafore Domain Security](https://apis.io/security/vertafore/vertafore-domain-security/)
 
-## APIs
+#### Plans and pricing (1)
 
-### Vertafore AMS360 EMS API
+Published plans, tiers and prices.
 
-The newest and preferred REST API for AMS360, the flagship P&C agency management system. It exposes agency data as REST resources - Customers, Policies, Service Agreements, Invoices, Billing, Deposits, and Personnel - secured with OAuth Bearer tokens. Public tutorials show a sandbox host `api-sandbox.vertafore.com` and a Customers endpoint under `/authgrant/v1/api`.
+- [Vertafore Plans Pricing](https://apis.io/plans/vertafore/vertafore-plans-pricing/)
 
-- **Human URL:** [https://developer.vertafore.com/](https://developer.vertafore.com/)
-- **Base URL:** `https://api.vertafore.com`
-- **Endpoints modeled:** yes (portal-gated)
+#### FinOps (1)
 
-### Vertafore AMS360 WSAPI
+What the API costs to run, by operation.
 
-The established SOAP web service for AMS360 (versions 2.4 and 3.0), exposed as `WSAPIService.svc` and authenticated with a per-agency username and password. Public references name operations such as `CustomerGet`, `PolicyGet`, and `SearchByPhoneNumber` under a `/v3/WSAPIService.svc` path.
+- [Vertafore Finops](https://apis.io/finops/vertafore/vertafore-finops/)
 
-- **Human URL:** [Web Service API Setup](https://help.vertafore.com/ams360/content/contextsensitive/download-integration/cswebserviceapisetup.htm)
-- **Endpoints modeled:** yes (WSDL is partner-gated)
+## Where to find this API
 
-### Vertafore AMS360 OData API
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-An OData connection method for AMS360 used to automatically retrieve customer, policy, and accounting data for reporting and downstream integrations. Access requires an AMS360 OData subscription contracted through Vertafore.
-
-- **Endpoints modeled:** yes (portal-gated)
-
-### Vertafore ImageRight REST API
-
-A REST API over ImageRight, Vertafore's document and content management platform for carriers and larger agencies - document ingestion and retrieval, files and folders, tasks, and workflow objects, authenticated with a token obtained from ImageRight credentials. A public ImageRight 6.8 REST API reference PDF documents the auth flow and resource model.
-
-- **Human URL:** [https://developer.vertafore.com/](https://developer.vertafore.com/)
-- **Endpoints modeled:** yes (deployment-specific base URLs)
-
-### Vertafore PL Rating API
-
-A rating and quoting API surface over PL Rating, Vertafore's personal-lines comparative rater connected to more than 300 carriers across 48 states and DC, including the newer in-rater bind capability. The portal refers to a Vertafore Rating API secured with API credential keys.
-
-- **Human URL:** [PL Rating](https://www.vertafore.com/products/insurance-comparative-rater/pl-rating)
-- **Endpoints modeled:** yes (contracts are partner-gated)
-
-### Vertafore Sagitta API
-
-Integration APIs over Sagitta, Vertafore's agency management system for larger and more complex commercial agencies and brokers. Documented integrations bridge Sagitta customer, contact, address, and policy data into other Vertafore products and certified Orange Partner solutions.
-
-- **Human URL:** [AMS360 & Sagitta Integrations](https://help.vertafore.com/commercialsubmissions/content/howto/managementsystemintegration.htm)
-- **Endpoints modeled:** yes (portal-gated)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/vertafore)
 - [Website](https://www.vertafore.com)
 - [Documentation](https://developer.vertafore.com/)
-- [Orange Partner Program](https://www.vertafore.com/why-vertafore/orange-partner-program)
-- [Plans](plans/vertafore-plans-pricing.yml)
-- [Fin Ops](finops/vertafore-finops.yml)
 - [Blog](https://www.vertafore.com/resources/blog)
 
-## WebSocket review
+## API Evangelist rating
 
-Vertafore does **not** expose a documented public WebSocket API. Its developer surface is request/response (REST, SOAP, OData), and near-real-time delivery in AMS360 is handled by the Outbound Notification Service (a webhook that POSTs to a customer HTTP endpoint), not a WebSocket. See `review.yml`.
+**Kin Score 10.8** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 7.9 |
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.3** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/vertafore/](https://apis.io/providers/vertafore/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Vertafore: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/vertafore/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
